@@ -1,0 +1,27 @@
+@import "../mixins/media";
+
+.header {
+    background: #1519FF;
+    font-family: Space Grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 86px;
+    padding:0 5px;
+    margin: 96px 0 0 0;
+    text-transform: uppercase;
+    color: #F4F4F4;
+    width: max-content;
+    @include media-tablet {
+        margin: 76px 0 0 0;
+        font-size: 36px;
+        line-height: 58px;
+    }
+
+    @include media-mobile {
+        margin: 76px 0 0 0;
+        font-size: 30px;
+        line-height: 34px;
+        width: auto;
+    }
+}

@@ -1,0 +1,8 @@
+mixin userCard(options)
+    .user(class= options.isReversed ? "user--inversed" : "")
+        div(class= "user__photo user__photo--" + options.number)
+        .profile
+            .profile__name= options.name
+            .profile__job= options.job
+            .profile__time= options.time
+            .profile__text= options.text

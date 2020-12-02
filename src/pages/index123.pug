@@ -1,0 +1,38 @@
+extends common/layout
+
+block content
+  main.main
+    include includes/index/userCard.pug
+    
+    +userCard({
+      "number": 'first',
+      "isReversed": false,
+      "name": user1.name,
+      "job": user1.job,
+      "time": user1.time,
+      "text": user1.text
+      })
+    +userCard({
+      "number": 'second',
+      "isReversed": false,
+      "name": user2.name,
+      "job": user2.job,
+      "time": user2.time,
+      "text": user2.text
+      })
+    +userCard({
+      "number": 'third',
+      "isReversed": true,
+      "name": user3.name,
+      "job": user3.job,
+      "time": user3.time,
+      "text": user3.text
+      })
+    +userCard({
+      "number": 'fourth',
+      "isReversed": true,
+      "name": user4.name,
+      "job": user4.job,
+      "time": user4.time,
+      "text": user4.text
+      })

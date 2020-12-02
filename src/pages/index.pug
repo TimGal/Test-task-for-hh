@@ -1,0 +1,30 @@
+extends common/layout
+
+block content
+    main.main
+        
+    .subscription
+        .course
+            .property
+                .property__key start:
+                .property__value october 29
+            .property
+                .property__key Remained:
+                .property__value 15 seats
+            h2.course__callToAction Qui eos a quia dolorem sapiente deserunt ut expedita sunt. Quia perspiciatis quo excepturi id dolor voluptatem aut adipisci.
+        .value
+            h2.subheader Labore qui et animi.
+            .price
+                p.price__cost 4 900 Р
+                p.price__payoutTime per month
+            .discount
+                .discount__percent -40%
+                .discount__till until 28 december
+            .withoutDiscount
+                .withoutDiscount__text installment plan without discount
+                .withoutDiscount__cost 5000 Р/month
+        .subscriptionForm
+                input#email.subscriptionForm__email.text(type="email" name="email" placeholder="Your email" value="" required)
+                input#phone.subscriptionForm__phone.text(type="text" name="phone" placeholder="Your phone" value="" required)
+                input#name.subscriptionForm__name.text(type="text" name="name" placeholder="Your name" value="" required)
+                input.subscriptionForm__submit(type="submit" name="submit" value="subscribe")
